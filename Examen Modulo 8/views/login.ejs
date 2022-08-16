@@ -1,0 +1,59 @@
+<%- include("template/cabeceraPrincipal", {tituloWeb: 'Inicio de Sesión' }) %><style type="text/css">
+
+</style>
+
+  <center>
+    <div class="container" >
+      <div class="wrapper w-70" >
+           <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="https://i0.wp.com/files.polldaddy.com/39e01220cf2f5c43622d6d6e7408f037-5af996ebac34e.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://www.elespectador.com/resizer/5Tkff6-qRGQPrGFn9mmRAq-1w34=/920x613/filters:format(jpeg)/cloudfront-us-east-1.images.arcpublishing.com/elespectador/QIRKPCUKNBHTLP6BU5ICGKMKLQ.jpeg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://pop.toys/wp-content/uploads/2017/02/TrivialPursuit_HarryPotter.jpg..." class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                  </div>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+    <div class="container" >
+      <br>
+      <p class="h1">Iniciar Sesión</p>
+      <br>
+      <form action="logueando" method="post">
+        <div class="form-outline mb-4">
+          <input type="text" id="form2Example1" name="ingresarNombre" placeholder="Usuario" autofocus
+            class="form-control" />
+        </div>
+        <div class="form-outline mb-4">
+          <input type="password" id="form2Example2" name="ingresarPassword" placeholder="Contraseña"
+            class="form-control" />
+        </div>
+        <div class="row mb-4">
+          <div class="col d-flex justify-content-center">
+            <div class="form-check">
+            </div>
+          </div>
+          <div class="col">
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block mb-4">Ingresar</button>
+        <div class="text-center">
+          <p>¿No estás registrado? <a href="/web/registro">Registrarse aquí</a></p>
+        </div>
+      </form>
+    </div>
+  </center>
+  <br>
+  <%- include("template/footer") %>

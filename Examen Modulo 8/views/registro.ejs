@@ -1,0 +1,37 @@
+<%- include("template/cabeceraPrincipal", {tituloWeb: 'Registro Usuario' }) %>
+
+  <div class="container">
+    <br>
+    <center>
+      <p class="h1">Registro de Usuario</p>
+    </center>
+    <br>
+    <center>
+      <form action="registro" method="post">
+        <div class="form-outline mb-4">
+          <input type="text" id="form2Example1" name="user" placeholder="Ingresar Usuario" autofocus
+            class="form-control" />
+        </div>
+        <div class="form-outline mb-4">
+          <input type="password" id="form2Example2" name="password" placeholder="Ingresar Contraseña"
+            class="form-control" />
+        </div>
+        <div class="form-outline mb-4">
+          <input type="hidden" id="form2Example2" name="es_admin" value="1" class="form-control" />
+        </div>
+        <div class="row mb-4">
+          <div class="col d-flex justify-content-center">
+            <div class="form-check">
+            </div>
+          </div>
+          <div class="col">
+          </div>
+        </div>
+        <button type="submit" class="btn btn-warning btn-block mb-4">Registrar</button>
+        <div class="text-center">
+          <p>¿Ya tienes cuenta? <a href="/web/login">Inicia aquí</a></p>
+        </div>
+      </form>
+  </div>
+  </center>
+  <%- include("template/footer") %>

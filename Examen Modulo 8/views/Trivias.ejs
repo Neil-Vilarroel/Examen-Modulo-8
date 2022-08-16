@@ -1,0 +1,84 @@
+<%- include("template/cabecera4", {tituloWeb: 'Trivia Admin' }) %>
+
+
+       
+        <br>
+        <center>
+            <div >
+                <h3>  </h3>
+    <p class="text-primary">Lee atentamente las siguientes preguntas y selecciona la alternativa que consideres correcta</p>            
+            </div>
+              </center>
+            <br>
+            <br>
+            <br>
+              <div style="background-image:url('https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/hc_1440x810/public/media/image/2019/12/mapa-merodeador.jpg?itok=e_jj0-j1')"style="background-repeat:no-repeat">
+                
+              
+              <br>
+        <form class="form-check" action="validar" method="post">
+            <div class="container border border-dark">
+                <h1 name="pregunta">
+                    <%= pregunta %>
+                </h1>
+                <label class="form-check">
+                    <input class="form-check-input" type="radio" name="rp1" value=<%=respuestaCorrecta %>>
+                    <%= respuestaCorrecta %>
+                </label>
+                <br>
+                <label class="form-check">
+                    <input class="form-check-input" type="radio" name="rp1">
+                    <%= RespuestaIncorrecta1 %>
+                </label>
+                <br>
+                <label class="form-check">
+                    <input class="form-check-input" type="radio" name="rp1">
+                    <%= RespuestaIncorrecta2 %>
+                </label>
+                <!---->
+            </div> <br>
+            <div class="container border border-dark">
+                <h1 name="pregunta2">
+                    <%= pregunta2 %>
+                </h1>
+                <label class="form-check">
+                    <input class="form-check-input" type="radio" name="rp2" value=<%=respuestaCorrecta2 %>>
+                    <%= respuestaCorrecta2 %>
+                </label>
+                <br>
+                <label class="form-check">
+                    <input class="form-check-input" type="radio" name="rp2">
+                    <%= RespuestaIncorrecta22 %>
+                </label>
+                <br>
+                <label class="form-check">
+                    <input class="form-check-input" type="radio" name="rp2">
+                    <%= RespuestaIncorrecta22 %>
+                </label>
+            </div>
+            <!---->
+            <br>
+            <div class="container border border-dark">
+                <h1 name="pregunta3">
+                    <%= pregunta3 %>
+                </h1>
+                <label class="form-check">
+                    <input class="form-check-input" type="radio" name="rp3" value=<%=respuestaCorrecta3 %>>
+                    <%= respuestaCorrecta3 %>
+                </label>
+                <br>
+                <label class="form-check">
+                    <input class="form-check-input" type="radio" name="rp3">
+                    <%= RespuestaIncorrecta33 %>
+                </label>
+                <br>
+                <label class="form-check">
+                    <input class="form-check-input" type="radio" name="rp3">
+                    <%= RespuestaIncorrecta33 %>
+            </div>
+        </div>
+            <br>
+            <center><button type="submit" class="btn btn-warning">Enviar</button></center>
+        </form>
+    </body>
+    </div>

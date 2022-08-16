@@ -1,0 +1,52 @@
+<%- include("template/cabecera3", {tituloWeb: 'Principal' }) %>
+<br>
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://i0.wp.com/files.polldaddy.com/39e01220cf2f5c43622d6d6e7408f037-5af996ebac34e.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.elespectador.com/resizer/5Tkff6-qRGQPrGFn9mmRAq-1w34=/920x613/filters:format(jpeg)/cloudfront-us-east-1.images.arcpublishing.com/elespectador/QIRKPCUKNBHTLP6BU5ICGKMKLQ.jpeg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://pop.toys/wp-content/uploads/2017/02/TrivialPursuit_HarryPotter.jpg..." class="d-block w-100" alt="...">
+      </div>
+    </div>
+  </div>
+
+
+
+
+<center><div class="container border border-dark">
+    <%puntos= 0 %>
+        <% if (respuesta1 !=="on" ) { puntos+=1 %>
+
+            <% }%>
+                <% if (respuesta2 !=="on" ) { puntos+=1 %>
+
+                    <% }%>
+                        <% if (respuesta3 !=="on" ) { %>
+                            <%puntos+=1 %>
+
+                                <% }%>
+                                    <p>
+                                        Score
+                                        <%= puntos%>
+                                    </p>
+                                    <p>Porcentaje <%let puntaje=(100*puntos)/3%>
+                                            <%= puntaje +"%"%>
+                                    </p>
+                                    <script>
+                                        let puntos = 0;
+                                        if (respuesta1 !== "on") {
+                                            puntos++
+                                        }
+                                        if (respuesta2 !== "on") {
+                                            puntos++
+                                        }
+                                        if (respuesta3 !== "on") {
+                                            puntos++
+                                        }
+                                        const puntaje = (100 * puntos) / 3
+                                    </script>
+</div></center>

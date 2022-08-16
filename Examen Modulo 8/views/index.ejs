@@ -1,0 +1,77 @@
+<%- include("template/cabecera", {tituloWeb: 'Principal' }) %>
+
+    <body class="bg-info">
+        <center>
+            <div class="container">
+                <div class="wrapper w-70" >
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="https://i.ytimg.com/vi/Qk_kUkcA4q8/maxresdefault.jpg">
+                        </div>
+                        
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>        
+           
+           
+           
+                <br>
+                <div class="text-center">
+                    <p>Bienvenido</p>
+                <h1> <%= mensaje %>
+                
+                </h1>
+                <br>
+                <div class="container border border-dark">
+                    <br>
+                    <form action="Trivias" method="post">           
+                      <button type="submit" href="" class="btn btn-primary">Jugar</button>
+                    </form>
+                    <div class="text-center">
+                        <p>Click en el botón para empezar el juego de la trivia</p>
+                    </div>
+                </div>
+            </div>
+        </center>
+        <br>
+        <br>
+        <br>
+        <!-- Aquí Tabla del Usuario -->
+        <center>
+            <div class="container">
+                <div class="container">
+                    <div class="input-group">
+                        <div class="form-outline">
+                            <input type="search" id="form1" autofocus placeholder="Usuario" class="form-control" />
+                            <label class="form-label" for="form1"></label>
+                        </div>&nbsp;&nbsp;
+                        <button type="button" style="max-height: 38px;" class="btn btn-primary rounded-pill">
+                            Búsqueda
+                        </button>
+                    </div>
+                </div>
+                <table class="table table-dark table-striped">
+                    <tr class="table-light">
+                        <td class="table-info">
+                            <center>NOMBRE</center>
+                        </td>
+                        <td class="table-info">
+                            <center>PUNTAJE</center>
+                        </td>
+                        <td class="table-info">
+                            <center>PORCENTAJE</center>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </center>
+    </body>
+    <%- include("template/footer") %>

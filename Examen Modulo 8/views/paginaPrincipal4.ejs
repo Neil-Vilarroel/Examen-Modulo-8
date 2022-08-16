@@ -1,0 +1,54 @@
+<%- include("template/cabecera3", {tituloWeb: 'Principal' }) %>
+
+    <body class="p-3 mb-2 bg-dark text-white">
+        <center>
+            <div class="container">
+                <br>
+               
+              <h1>  <p class="text-primary">Bienvenido</p></h1>
+                <br>
+                <div class="container border border-dark">
+                    <br>
+                    <form action="TriviasUsuarios" method="post">
+                        <button type="submit" href="" class="btn btn-primary">Jugar</button>
+                    </form>
+                    <div class="text-center">
+                        <p>Click en el botón para empezar el juego de la trivia</p>
+                    </div>
+                </div>
+            </div>
+        </center>
+        <br>
+        <br>
+        <br>
+        <!-- Aquí Tabla del Usuario -->
+        <center>
+            <div class="container">
+                <div class="container">
+                    <div class="input-group">
+                        <div class="form-outline">
+                            <input type="search" id="form1" autofocus placeholder="Usuario" class="form-control" />
+                            <label class="form-label" for="form1"></label>
+                        </div>&nbsp;&nbsp;
+                        <button type="button" style="max-height: 38px;" class="btn btn-primary rounded-pill">
+                            Buscar
+                        </button>
+                    </div>
+                </div>
+                <table class="table table-dark table-striped">
+                    <tr class="table-light">
+                        <td class="table-info">
+                            <center>NOMBRE</center>
+                        </td>
+                        <td class="table-info">
+                            <center>PUNTAJE</center>
+                        </td>
+                        <td class="table-info">
+                            <center>PORCENTAJE</center>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </center>
+    </body>
+    <%- include("template/footer") %>

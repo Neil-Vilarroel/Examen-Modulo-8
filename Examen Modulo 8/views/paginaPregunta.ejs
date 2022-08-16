@@ -1,0 +1,25 @@
+<%- include("template/cabecera2", {tituloWeb: 'Agrega Pregunta' }) %>
+    <br>
+    <div style="background-image:url('https://wallpapers.com/wallpapers/hogwarts-crest-parchment-paper-b8pnr62vsb8nzf48.html')" style="background-repeat:no-repeat" ></div> 
+    <div class="container">
+        <form action="enviarPreguntas" method="post"> 
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Agregar Pregunta</label>
+                <textarea autofocus name="agregarPregunta" class="form-control" id="exampleFormControlTextarea1"
+                    rows="3"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Respuesta Correcta</label>
+                <input type="text" name="respuestaCorrecta" class="form-control" id="exampleFormControlInput1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Respuesta falsa 1</label>
+                <input type="text" name="respuestaFalsa1" class="form-control" id="exampleFormControlInput1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Respuesta falsa 2</label>
+                <input type="text" name="respuestaFalsa2" class="form-control" id="exampleFormControlInput1">
+            </div>
+            <button type="submit" class="btn btn-primary">Ingresar Pregunta</button>
+        </form>
+    </div>
